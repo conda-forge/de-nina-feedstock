@@ -1,13 +1,13 @@
 {% set name = "de-nina" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/de-nina-{{ version }}.tar.gz
-  sha256: 8d21d52863d63b416fac62dd42e97dc8c48d2ecaba2ea05ba5f62b3a39cf65c6
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d7df4dcd82613450759bda92cd874cccc1bff11bd0dbfa9b833fcce9f90e96c0
 
 build:
   noarch: python
